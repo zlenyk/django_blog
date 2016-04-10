@@ -9,7 +9,7 @@
     <body>
         <div id='headder'>
             <div id='name'>
-                Zygmunt Łenyk
+                Testowy blog 
             </div>
             <div id='links'>
                 <div class='link'><a href = '/'> Home </a></div>
@@ -17,6 +17,7 @@
             {% if not user.is_authenticated %}
                 <div class='link'><a href = '/users/login/'> Login </a></div>
             {% else %}
+                <div class='link'><a href = '/admin/'> Admin </a></div>
                 <div class='link'><a href = '/users/logout/'> Logout </a></div>
 
             {% endif %}
