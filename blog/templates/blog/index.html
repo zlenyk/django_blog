@@ -1,0 +1,11 @@
+{% extends "base.html" %}
+{% block main %}
+{% for post in post_list %}
+    <p>
+    <b>{{post.title}}</b>
+    <p>    {{post.text}} </p>
+    {{post.author.first_name}}
+    </p>
+    </p>
+{% endfor %}
+{% endblock %}

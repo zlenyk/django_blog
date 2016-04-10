@@ -1,0 +1,27 @@
+{% load staticfiles %}
+<html>
+    <head>
+        <link rel="stylesheet" type="text/css" href="{% static "css/base.css" %}">
+    </head>
+    <body>
+        <div id='headder'>
+            <div id='name'>
+                Zygmunt Łenyk
+            </div>
+            <div id='links'>
+                <div class='link'><a href = '/'> HOME </a></div>
+                <div class='link'><a href = '/blog/index/'> BLOG </a></div>
+            {% if not user.is_authenticated %}
+                <div class='link'><a href = '/users/login/'> LOGIN </a></div>
+            {% else %}
+                <div class='link'><a href = '/users/logout/'> LOGOUT </a></div>
+                Logged as {{user.first_name}} {{user.last_name}}
+            {% endif %}
+            </div>
+        </div>
+        <div id='main'>
+        {% block main %}
+        {% endblock %}
+        </div>
+    </body>
+</html>

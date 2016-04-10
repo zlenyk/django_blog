@@ -1,0 +1,12 @@
+{% extends "base.html" %}
+{% block main %}
+{% load staticfiles %}
+{% if auth == False %}
+<p><b>You entered incorrect data</b></p>
+{% endif %}
+<form action="/users/login/" method="post">
+    {% csrf_token %}
+    {{ form }}
+    <input type="submit" value="Submit" />
+</form>
+{% endblock %}

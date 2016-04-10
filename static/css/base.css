@@ -1,0 +1,25 @@
+#headder{
+    position: relative;
+    width: 100%;
+    border-style: solid;
+    height: 50px;
+}
+#name{
+    float: left;
+    font-size: 40;
+}
+#links{
+    position:absolute;
+    bottom: 0;
+    left: 500;
+}
+#main{
+    width: 100%;
+}
+.link{
+    width:100px;
+    float: left;
+}
+a,u{
+    text-decoration: none;
+}
