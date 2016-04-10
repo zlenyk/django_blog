@@ -1,0 +1,12 @@
+{% extends "base.html" %}
+{% block main %}
+This is special blog visible only for logged people.
+{% for post in post_list %}
+    <p>
+    <b>{{post.title}}</b>
+    <p>    {{post.text}} </p>
+    {{post.author.first_name}}
+    </p>
+    </p>
+{% endfor %}
+{% endblock %}
