@@ -1,7 +1,6 @@
 #headder{
     position: relative;
     width: 100%;
-    border-style: solid;
     height: 50px;
 }
 #name{
@@ -19,6 +18,13 @@
 .link{
     width:100px;
     float: left;
+    color: #333333;
+    font-family: Century Gothic, sans-serif;
+}
+#logged{
+    position: absolute;
+    right: 0;
+    bottom: 0;
 }
 a,u{
     text-decoration: none;

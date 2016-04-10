@@ -1,6 +1,7 @@
 {% extends "base.html" %}
 {% load staticfiles %}
 {% block extra_head %}
+<link rel="stylesheet" type="text/css" href="{% static "users/css/reset.css" %}">
 <link rel="stylesheet" type="text/css" href="{% static "users/css/animate.css" %}">
 <link rel="stylesheet" type="text/css" href="{% static "users/css/styles.css" %}">
 {% endblock %}
@@ -13,7 +14,7 @@
 		<form action="/users/login/" method="post">
 			{% csrf_token %}
 		<label for="name">Username:</label>
-		{{ form.username }}
+		{{ form.username }}>
 		<label for="username">Password:</label>
 		{{ form.password }}
 		<div id="lower">
