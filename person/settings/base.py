@@ -29,6 +29,8 @@ PREINSTALLED_APPS = [
 USER_APPS = [
     'users',
     'blog',
+    'PIL',
+    'redactor',
 ]
 INSTALLED_APPS = PREINSTALLED_APPS + USER_APPS
 
@@ -117,3 +119,6 @@ STATIC_URL = '/static/'
 STATICFILES_DIRS = [
     os.path.join(BASE_DIR,'static/')
 ]
+
+REDACTOR_OPTIONS = {'lang': 'en'}
+REDACTOR_UPLOAD = 'uploads/'

@@ -8,6 +8,6 @@ urlpatterns = [
     url(r'^admin/', admin.site.urls),
     url(r'^users/', include('users.urls')),
     url(r'^blog/', include('blog.urls')),
-
+    url(r'^redactor/', include('redactor.urls')),
     url(r'$', TemplateView.as_view(template_name='index.html')),
 ]

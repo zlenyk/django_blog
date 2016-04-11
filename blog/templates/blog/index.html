@@ -8,4 +8,10 @@
     </p>
     </p>
 {% endfor %}
+{% for page in pages %}
+    {{page.title}}
+    {% autoescape off %}
+    {{page.text}}
+    {% endautoescape %}
+{% endfor %}
 {% endblock %}

@@ -1,5 +1,5 @@
 from django.db import models
-
+from redactor.fields import RedactorField
 class Post(models.Model):
     author = models.ForeignKey('auth.User')
     title = models.CharField(max_length=100)
@@ -13,3 +13,7 @@ class Post(models.Model):
 
     def __str__(self):
         return self.title
+
+class Page(models.Model):
+    title = models.CharField(max_length=100)
+    text = RedactorField(verbose_name=u'Text',default='')
