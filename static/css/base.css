@@ -1,8 +1,11 @@
+body{
+    height: 90%;
+}
 #headder{
     position: relative;
     width: 100%;
     height: 50px;
-    margin-bottom: 20px;
+    margin-bottom: 40px;
 }
 #name{
     float: left;
@@ -15,6 +18,8 @@
 }
 #main{
     width: 100%;
+    height: 75%;
+    overflow: auto;
 }
 .link{
     width:100px;
@@ -29,4 +34,10 @@
 }
 a,u{
     text-decoration: none;
+}
+#footer{
+    position: absolute;
+    bottom: 5px;
+    font-size: 10;
+    margin-top: 30;
 }
