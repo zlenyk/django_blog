@@ -4,7 +4,9 @@ This is special blog visible only for logged people.
 {% for post in post_list %}
     <p>
     <b>{{post.title}}</b>
+    {% autoescape.off %}
     <p>    {{post.text}} </p>
+    {% endautoescape %}
     {{post.author.first_name}}
     </p>
     </p>
