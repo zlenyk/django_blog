@@ -5,4 +5,4 @@ from django_summernote.admin import SummernoteModelAdmin
 #admin.site.register(Post)
 @admin.register(Post)
 class PostAdmin(SummernoteModelAdmin):
-    pass
+    prepopulated_fields = {"slug": ("title",)}
