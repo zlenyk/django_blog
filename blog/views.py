@@ -14,5 +14,6 @@ def classified(request):
 
 def post(request,slug,id):
     post = get_object_or_404(Post,pk=id)
-    context = {'post': post}
+    all_posts = Post.objects.all().filter(classified=False).order_by('-publish_date')
+    context = {'post': post,'post_list': all_posts}
     return render(request,'blog/post.html',context)

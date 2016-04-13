@@ -13,7 +13,9 @@
     <hr>
 {% endfor %}
 {% endblock %}
-
 {% block right-menu %}
-    There is some blog related content here.
+{% for post in post_list %}
+    <a href="{{post.get_absolute_url}}">{{post.title}}</a>
+    <br />
+{% endfor %}
 {% endblock %}
