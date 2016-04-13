@@ -5,7 +5,7 @@
     <p> {{post.publish_date}} </p>
     <a href="{{post.get_absolute_url}}"><h3>{{post.title}}</h3></a>
     {% autoescape off %}
-    {{post.text | truncatewords:30}}
+    {{post.text | truncatewords_html:30}}
     {% endautoescape %}
     </div>
     <hr>
