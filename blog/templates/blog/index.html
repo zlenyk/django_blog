@@ -2,11 +2,10 @@
 {% block main %}
 {% for post in post_list %}
     <div id='post'>
-    <p>
     <p> {{post.publish_date}} </p>
     <a href="{{post.get_absolute_url}}"><h3>{{post.title}}</h3></a>
     {% autoescape off %}
-    <p>    {{post.text | truncatewords:30}} </p>
+    {{post.text | truncatewords:30}}
     {% endautoescape %}
     </div>
     <hr>
