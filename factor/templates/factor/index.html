@@ -1,0 +1,8 @@
+{% extends "base.html" %}
+{% block main %}
+<form action="/factor/" method="POST">
+    {% csrf_token %}
+{{form}}
+<input type="submit" value="Factor">
+</form>
+{% endblock %}

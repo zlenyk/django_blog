@@ -3,6 +3,7 @@ from blog.models import Post
 from django.shortcuts import get_object_or_404
 from django.contrib.auth.decorators import login_required
 import users
+
 def index(request):
     all_posts = Post.objects.all().filter(classified=False).order_by('-publish_date')
     context = {'post_list': all_posts}

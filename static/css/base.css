@@ -14,13 +14,13 @@
     left: 500;
 }
 #main{
-    width: 80%;
+    width: 70%;
     height: 75%;
     overflow: auto;
     float: left;
 }
 #right-menu{
-    width: 18%;
+    width: 28%;
     float: left;
 }
 .link{

@@ -31,6 +31,8 @@ USER_APPS = [
     'blog',
     'PIL',
     'django_summernote',
+    'factor',
+    'aiwars',
 ]
 INSTALLED_APPS = PREINSTALLED_APPS + USER_APPS
 

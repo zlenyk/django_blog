@@ -14,11 +14,13 @@
             </div>
             <div id='links'>
                 <div class='link'><a href = '/'> Home </a></div>
+                <div class='link'><a href = '/factor/'> Factor </a></div>
                 <div class='link'><a href = '/blog/index/'> Blog </a></div>
             {% if not user.is_authenticated %}
                 <div class='link'><a href = '/users/login/'> Login </a></div>
             {% else %}
                 <div class='link'><a href = '/admin/'> Admin </a></div>
+                <div class='link'><a href = '/aiwars/select/'> Aiwars </a></div>
                 <div class='link'><a href = '/blog/classified/'> Classified </a></div>
                 <div class='link'><a href = '/users/logout/'> Logout </a></div>
 
@@ -30,6 +32,9 @@
         </div>
         <div id='main' class="content mCustomScrollbar light">
         {% block main %}
+        <form action="/factor/" method="post">
+            
+        </form>
         {% endblock %}
         </div>
         <div id='right-menu'>
